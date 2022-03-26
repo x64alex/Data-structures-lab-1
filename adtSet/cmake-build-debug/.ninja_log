@@ -1,0 +1,8 @@
+# ninja log v5
+26	65	1648321368870191970	adtSet	83c0ffbec888c7c8
+2	232	1648320820804580837	CMakeFiles/adtSet.dir/ShortTest.cpp.o	97ff61e96e8b04bb
+2	253	1648321038038237514	CMakeFiles/adtSet.dir/ExtendedTest.cpp.o	83b1d832f448bf28
+3	26	1648321368830783173	CMakeFiles/adtSet.dir/Set.cpp.o	1c37f574f6990c0e
+2	258	1648320766636037523	CMakeFiles/adtSet.dir/main.cpp.o	ee1a81fa8ec8b429
+2	250	1648320911800317928	CMakeFiles/adtSet.dir/SetIterator.cpp.o	325a74df8e31efde
+0	39	1648321813741867065	build.ninja	8b0907e263682a75
