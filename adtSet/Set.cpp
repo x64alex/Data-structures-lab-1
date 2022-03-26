@@ -6,13 +6,14 @@ Set::Set() {
 	elements = new TElem;
 }
 
-
+/*
+* Best Case: Theta(1)
+* Worst Case: Theta(n)
+* Average Case: Theta(n)
+* Total case: O(n)
+*/
 bool Set::add(TElem elem) {
-    /*
-     * The complexity is O(n) because in the worst case we go n steps and add the element and return true
-     * and in the best case return false after 1 step(if the first element is the el we tried to add).
-     */
-	for(int i=0;i<length;i++)
+    for(int i=0;i<length;i++)
     {
         if(elements[i] == elem)
         {
@@ -24,7 +25,12 @@ bool Set::add(TElem elem) {
 	return true;
 }
 
-
+/*
+* Best Case: Theta(n)
+* Worst Case: Theta(n)
+* Average Case: Theta(n)
+* Total case: Theta(n)
+*/
 bool Set::remove(TElem elem) {
     for(int i=0;i<length;i++)
     {
@@ -39,7 +45,12 @@ bool Set::remove(TElem elem) {
     }
 	return false;
 }
-
+/*
+* Best Case: Theta(1)
+* Worst Case: Theta(n)
+* Average Case: Theta(n)
+* Total case: O(n)
+*/
 bool Set::search(TElem elem) const {
     for(int i=0;i<length;i++)
     {
@@ -51,12 +62,22 @@ bool Set::search(TElem elem) const {
 	return false;
 }
 
-
+/*
+* Best Case: Theta(1)
+* Worst Case: Theta(1)
+* Average Case: Theta(1)
+* Total case: Theta(1)
+*/
 int Set::size() const {
 	return length;
 }
 
-
+/*
+* Best Case: Theta(1)
+* Worst Case: Theta(1)
+* Average Case: Theta(1)
+* Total case: Theta(1)
+*/
 bool Set::isEmpty() const {
 	if(length == 0){
         return true;
@@ -64,12 +85,22 @@ bool Set::isEmpty() const {
     return false;
 }
 
-
+/*
+* Best Case: Theta(1)
+* Worst Case: Theta(1)
+* Average Case: Theta(1)
+* Total case: Theta(1)
+*/
 Set::~Set() {
 	delete elements;
 }
 
-
+/*
+* Best Case: Theta(1)
+* Worst Case: Theta(1)
+* Average Case: Theta(1)
+* Total case: Theta(1)
+*/
 SetIterator Set::iterator() const {
 	return SetIterator(*this);
 }
